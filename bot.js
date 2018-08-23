@@ -13,8 +13,6 @@ bot.on("message", message => {
    if(message.content === "vbd.shutdown") {
      message.channel.send('Shuting down')
      bot.destroy();
-   } else {
-     message.channel.send('Developer only.')
    }
   }
 })
