@@ -20,6 +20,11 @@ bot.on("message", message => {
   }
 });
 
+bot.on("message", message => {
+  if(message.content === "vb!gat") {
+    message.channel('477227426007744524').send('Trojan go away.')
+  }
+})
 
 
 
