@@ -22,7 +22,7 @@ bot.on("message", message => {
 
 bot.on("message", message => {
   if(message.content === "trogannnnn") {
-    message.channel.send('@Trojan#0916 go away.')
+    message.channel.send(`@Trojan#0916 go away.`)
   }
 })
 
