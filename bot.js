@@ -17,4 +17,4 @@ bot.on("message", message => {
   }
 })
 
-bot.login(process.evl.BTOKEN)
+bot.login(process.env.BTOKEN)
