@@ -23,7 +23,7 @@ bot.on("message", message => {
 client.on("message", message => {
   const args = message.content.split(" ").slice(1);
 
-  if (message.content.startsWith(config.prefix + "eval")) {
+  if (message.content === (vbd.eval)) {
     if(message.author.id !== config.ownerID) return;
     try {
       const code = args.join(" ");
