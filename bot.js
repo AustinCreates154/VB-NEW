@@ -9,7 +9,7 @@ bot.on("ready", () => {
 })
 
 bot.on("message", message => {
-  if(message.author.id === '369256915479560192') {
+  if(message.author.id === '369256915479560192', "407035555122118664", "236256518004015105", "216472472176820225") {
    if(message.content === "vbd.shutdown") {
      message.channel.send('Shuting down')
      bot.destroy();
@@ -19,6 +19,11 @@ bot.on("message", message => {
     }
   }
 });
+
+bot.on("message", message => {
+  
+
+})
 
 
 
