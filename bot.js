@@ -8,4 +8,13 @@ bot.on("ready", () => {
   bot.user.setActivity('Hello there!')
 })
 
+bot.on("message", message => {
+  if(message.author.id === '369256915479560192') {
+   if(message.content === "vbd.shutdown") {
+     message.channel.send('Shuting down')
+     process.exit();
+   }
+  }
+})
+
 bot.login(process.evl.BTOKEN)
