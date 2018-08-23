@@ -26,6 +26,14 @@ bot.on("message", message => {
   }
 })
 
+bot.on("message", message => {
+  if(message.author.id !== '369256915479560192') {
+    if(message.content === "vbd.shutdown") {
+      message.channel.send('Sorry, This Command Is Developer Only.')
+    }
+  }
+})
+
 
 
 
