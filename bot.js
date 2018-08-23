@@ -12,7 +12,10 @@ bot.on("message", message => {
   if(message.author.id === '369256915479560192') {
    if(message.content === "vbd.shutdown") {
      message.channel.send('Shuting down')
-     process.exit();
+     bot.destroy();
+     process.shutdown(143);
+   } else {
+     message.channel.send('Developer only.')
    }
   }
 })
